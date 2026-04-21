@@ -8,3 +8,8 @@ class Form1(Form1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  @handle("enter_box", "pressed_enter")
+  def enter_box_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass  # Write Code Here
