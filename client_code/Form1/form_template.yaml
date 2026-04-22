@@ -8,7 +8,8 @@ components:
         placeholder: Enter number
         role: outlined
       type: TextBox
-    - layout_properties: {col_xs: 7, row: DWOJTE, width_xs: 5}
+    - event_bindings: {}
+      layout_properties: {col_xs: 7, row: DWOJTE, width_xs: 5}
       name: conv_drop
       properties:
         items: [Hartree, eV, cm-1, kcal/mol, nm]
