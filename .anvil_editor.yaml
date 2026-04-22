@@ -4,6 +4,8 @@ unique_ids:
     theme.css: 7TOIAU7OYPGDR53HH32C3BNN7KLTJMJK
   forms:
     Form1: 2XWWJWC6SHSEJL6L6R3266SVZHO72UY3
+    Form1.RowTemplate1: '1776819673553540159009444.26074'
+    Form1.RowTemplate2: '1776819790228338176760856.2919'
   modules: {}
   scripts: {}
   server_modules: {}
