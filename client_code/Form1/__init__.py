@@ -13,3 +13,13 @@ class Form1(Form1Template):
   def enter_box_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass  # Write Code Here
+
+CONVERSION_FACTORS = {
+  'inches': 12,
+  'yards': 1/3,
+  'miles': 1/5280,
+  'cm': 30.48
+}
+
+def convert_feet(value, to_unit):
+  return value * CONVERSION_FACTORS.get(to_unit, 1)
