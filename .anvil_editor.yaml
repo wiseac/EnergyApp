@@ -8,4 +8,5 @@ unique_ids:
     Form1.RowTemplate2: '1776819790228338176760856.2919'
   modules: {}
   scripts: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1776879770244307434766739.5515'

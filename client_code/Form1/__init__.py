@@ -1,5 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
 
 
 class Form1(Form1Template):
@@ -9,7 +10,9 @@ class Form1(Form1Template):
 
     # Any code you write here will run before the form opens.
   
-  @handle("enter_box", "pressed_enter")
+    self.enter_box.add_event_handler('pressed_enter', self.enter_box_pressed_enter)
+    self.enter_button.add_event_handler( 'click', self.enter_button_click)
+    self.clear_button.add_event_handler( 'click', self.clear_button_click)
   def enter_box_pressed_enter(self, **event_args):
     display_names = [self.display_0, self.display_1,self.display_2, self.display_3]
     label_names = [self.conv_label_0, self.conv_label_1,self.conv_label_2, self.conv_label_3]
@@ -34,12 +37,10 @@ class Form1(Form1Template):
         display_names[i].text = convert_nm(float(self.enter_box.text), list(CONVERSION_nm_FACTORS)[i])
         label_names[i].text = list(CONVERSION_nm_FACTORS)[i]
 
-  @handle("enter_button", "click")
   def enter_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.enter_box.raise_event('pressed_enter')
 
-  @handle("clear_button", "click")
   def clear_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     display_names = [self.display_0, self.display_1,self.display_2, self.display_3]
