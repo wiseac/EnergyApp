@@ -1,6 +1,23 @@
 components:
 - components:
   - components:
+    - layout_properties: {col_xs: 1, row: DWOJTE, width_xs: 1}
+      name: label_1
+      properties:
+        bold: true
+        spacing:
+          padding: [null, null, null, 50]
+        text: Input
+      type: Label
+    - layout_properties: {col_xs: 6, row: DWOJTE, width_xs: 5}
+      name: label_2
+      properties:
+        bold: true
+        spacing:
+          margin: [null, null, 4, null]
+          padding: [null, null, 9, 24]
+        text: Input Unit
+      type: Label
     - layout_properties: {col_xs: 1, row: DWOJTE, width_xs: 6}
       name: enter_box
       properties:
@@ -16,19 +33,27 @@ components:
       type: DropDown
     - data_bindings: []
       event_bindings: {}
-      layout_properties: {col_xs: 2, row: OZWZKT, width_xs: 4}
+      layout_properties: {col_xs: 1, row: OZWZKT, width_xs: 5}
       name: enter_button
       properties: {text: Enter}
       type: Button
     - event_bindings: {}
-      layout_properties: {col_xs: 7, row: OZWZKT, width_xs: 4}
+      layout_properties: {col_xs: 6, row: OZWZKT, width_xs: 5}
       name: clear_button
       properties: {text: Clear}
       type: Button
-    layout_properties: {grid_position: 'SJBYAS,POYFFI OZHDXF,DGFTWB'}
+    layout_properties: {grid_position: 'SJBYAS,POYFFI'}
     name: grid_panel_1
     properties: {}
     type: GridPanel
+  - layout_properties: {grid_position: 'SJBYAS,QSPTIA MIMCXX,AEPIEW'}
+    name: label_3
+    properties:
+      bold: true
+      spacing:
+        padding: [11, null, 0, 49]
+      text: Conversion
+    type: Label
   - components:
     - layout_properties: {col_xs: 0, row: FWCRWY, width_xs: 4}
       name: display_0
@@ -78,17 +103,20 @@ components:
       name: conv_label_3
       properties: {bold: true, text: ''}
       type: Label
-    layout_properties: {grid_position: 'SJBYAS,QSPTIA'}
+    layout_properties: {grid_position: 'SJBYAS,QSPTIA ETSMDH,SMMXOK'}
     name: grid_panel_2
-    properties: {}
+    properties:
+      spacing:
+        padding: [3, 140, null, null]
     type: GridPanel
   layout_properties: {slot: default}
   name: content_panel
   properties:
+    col_spacing: none
     col_widths: '{"POYFFI":20,"QSPTIA":40}'
     spacing:
       margin: [null, null, null, 0]
-      padding: [null, 120, null, 0]
+      padding: [null, 165, null, 0]
     wrap_on: mobile
   type: ColumnPanel
 - layout_properties: {slot: nav-right}
