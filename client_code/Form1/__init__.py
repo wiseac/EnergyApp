@@ -49,7 +49,6 @@ class Form1(Form1Template):
     for i in range(4):
       display_names[i].text = ""
       label_names[i].text = ""
-
   
 CONVERSION_Hartree_FACTORS = {
   'ev': 27.2107 ,
