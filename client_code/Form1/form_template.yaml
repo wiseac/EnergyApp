@@ -1,68 +1,73 @@
 components:
 - components:
   - components:
-    - layout_properties: {col_xs: 1, row: DWOJTE, width_xs: 1}
+    - layout_properties: {grid_position: 'MTQOCK,HKWXQM ZJOXGC,UGMDVN'}
       name: label_1
       properties:
+        align: center
         bold: true
         spacing:
-          padding: [null, null, null, 50]
+          margin: [0, null, 0, null]
+          padding: [0, null, 0, null]
         text: Input
       type: Label
-    - layout_properties: {col_xs: 6, row: DWOJTE, width_xs: 5}
-      name: label_2
-      properties:
-        bold: true
-        spacing:
-          margin: [null, null, 4, null]
-          padding: [null, null, 9, 24]
-        text: Input Unit
-      type: Label
-    - layout_properties: {col_xs: 1, row: DWOJTE, width_xs: 6}
+    - layout_properties: {grid_position: 'MTQOCK,HKWXQM QSIXPC,QLDOFC'}
       name: enter_box
       properties:
         margin: [0, 4, null, 23]
         placeholder: Enter number
         role: outlined
       type: TextBox
+    - data_bindings: []
+      event_bindings: {}
+      layout_properties: {grid_position: 'MTQOCK,HKWXQM IFLIOK,XCAIVB'}
+      name: enter_button
+      properties: {text: Enter}
+      type: Button
+    - layout_properties: {grid_position: 'MTQOCK,VRCTRC UKGRBY,PHZFHU'}
+      name: label_2
+      properties:
+        align: center
+        bold: true
+        spacing:
+          margin: [0, null, 0, 0]
+          padding: [0, null, 0, 0]
+        text: Input Unit
+      type: Label
     - event_bindings: {}
-      layout_properties: {col_xs: 7, row: DWOJTE, width_xs: 5}
+      layout_properties: {grid_position: 'MTQOCK,VRCTRC MRRKFO,CYGJDJ'}
       name: conv_drop
       properties:
         items: [Hartree, eV, cm-1, kcal/mol, nm]
       type: DropDown
-    - data_bindings: []
-      event_bindings: {}
-      layout_properties: {col_xs: 1, row: OZWZKT, width_xs: 5}
-      name: enter_button
-      properties: {text: Enter}
-      type: Button
     - event_bindings: {}
-      layout_properties: {col_xs: 6, row: OZWZKT, width_xs: 5}
+      layout_properties: {grid_position: 'MTQOCK,VRCTRC NBUFTP,KNBNFP'}
       name: clear_button
       properties: {text: Clear}
       type: Button
-    layout_properties: {grid_position: 'SJBYAS,POYFFI'}
-    name: grid_panel_1
+    layout_properties: {grid_position: 'BMUUKA,LQVOPV'}
+    name: column_panel_1
     properties: {}
-    type: GridPanel
-  - layout_properties: {grid_position: 'SJBYAS,QSPTIA MIMCXX,AEPIEW'}
-    name: label_3
-    properties:
-      bold: true
-      spacing:
-        padding: [11, null, 0, 49]
-      text: Conversion
-    type: Label
+    type: ColumnPanel
   - components:
-    - layout_properties: {col_xs: 0, row: FWCRWY, width_xs: 4}
+    - layout_properties: {grid_position: 'EEDDFG,YCDCLN'}
+      name: label_3
+      properties:
+        align: left
+        bold: true
+        spacing:
+          margin: [0, null, 0, null]
+          padding: [0, null, 0, 0]
+        text: Conversion
+      type: Label
+    - layout_properties: {grid_position: 'MJPSFX,QAROMO'}
       name: display_0
       properties:
         enabled: false
         margin: [null, 0, null, '20']
         role: outlined
       type: TextBox
-    - layout_properties: {col_xs: 4, row: FWCRWY, width_xs: 2}
+    - layout_properties: {grid_position: 'MJPSFX,RKHVUA'}
       name: conv_label_0
       properties:
         bold: true
@@ -70,53 +75,52 @@ components:
           padding: [null, 0, null, 0]
         text: ''
       type: Label
-    - layout_properties: {col_xs: 0, row: FIQNGX, width_xs: 4}
+    - layout_properties: {grid_position: 'PZHZJO,HMYRUN'}
       name: display_1
       properties:
         enabled: false
         margin: [null, null, null, '20']
         role: outlined
       type: TextBox
-    - layout_properties: {col_xs: 4, row: FIQNGX, width_xs: 2}
+    - layout_properties: {grid_position: 'PZHZJO,KGCAXA'}
       name: conv_label_1
       properties: {bold: true, text: ''}
       type: Label
-    - layout_properties: {col_xs: 0, row: ZSYMON, width_xs: 4}
+    - layout_properties: {grid_position: 'ISKJQD,AIUYYS'}
       name: display_2
       properties:
         enabled: false
         margin: [null, null, null, '20']
         role: outlined
       type: TextBox
-    - layout_properties: {col_xs: 4, row: ZSYMON, width_xs: 2}
-      name: conv_label_2
+    - layout_properties: {grid_position: 'ISKJQD,ZLWUCU'}
+      name: conv_label_3
       properties: {bold: true, text: ''}
       type: Label
-    - layout_properties: {col_xs: 0, row: UQIPQS, width_xs: 4}
+    - layout_properties: {grid_position: 'MTGJJJ,ICMIEV'}
       name: display_3
       properties:
         enabled: false
         margin: [null, null, null, '20']
         role: outlined
       type: TextBox
-    - layout_properties: {col_xs: 4, row: UQIPQS, width_xs: 2}
-      name: conv_label_3
+    - layout_properties: {grid_position: 'MTGJJJ,ZACUTX'}
+      name: conv_label_2
       properties: {bold: true, text: ''}
       type: Label
-    layout_properties: {grid_position: 'SJBYAS,QSPTIA ETSMDH,SMMXOK'}
-    name: grid_panel_2
-    properties:
-      spacing:
-        padding: [3, 140, null, null]
-    type: GridPanel
+    layout_properties: {grid_position: 'BMUUKA,OZQGIB'}
+    name: column_panel_2
+    properties: {}
+    type: ColumnPanel
+  data_bindings: []
   layout_properties: {slot: default}
   name: content_panel
   properties:
     col_spacing: none
-    col_widths: '{"POYFFI":20,"QSPTIA":40}'
+    col_widths: '{"QSPTIA":40}'
     spacing:
       margin: [null, null, null, 0]
-      padding: [null, 165, null, 0]
+      padding: [null, 216, null, 0]
     wrap_on: mobile
   type: ColumnPanel
 - layout_properties: {slot: nav-right}
