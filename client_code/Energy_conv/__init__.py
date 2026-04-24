@@ -13,6 +13,7 @@ class Energy_conv(Energy_convTemplate):
     self.enter_box.add_event_handler('pressed_enter', self.enter_box_pressed_enter)
     self.enter_button.add_event_handler( 'click', self.enter_button_click)
     self.clear_button.add_event_handler( 'click', self.clear_button_click)
+    self.link_2.add_event_handler( 'click', self.link_2_click)
   def enter_box_pressed_enter(self, **event_args):
     display_names = [self.display_0, self.display_1,self.display_2, self.display_3]
     label_names = [self.conv_label_0, self.conv_label_1,self.conv_label_2, self.conv_label_3]
@@ -50,7 +51,6 @@ class Energy_conv(Energy_convTemplate):
       display_names[i].text = ""
       label_names[i].text = ""
 
-  @handle("link_2", "click")
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('Energy_conv')
