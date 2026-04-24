@@ -1,0 +1,205 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'MTQOCK,FQIVXS'}
+      name: spacer_2
+      properties: {height: 32}
+      type: Spacer
+    - layout_properties: {grid_position: 'MTQOCK,HKWXQM ZJOXGC,UGMDVN'}
+      name: label_1
+      properties:
+        align: center
+        bold: true
+        spacing:
+          margin: [0, null, 0, null]
+          padding: [0, null, 4, null]
+        text: Input
+      type: Label
+    - layout_properties: {grid_position: 'MTQOCK,HKWXQM QSIXPC,QLDOFC'}
+      name: enter_box
+      properties:
+        align: center
+        foreground: '#FFFAFA'
+        margin: [0, 0, 0, 0]
+        placeholder: ''
+        role: outlined
+        type: number
+      type: TextBox
+    - data_bindings: []
+      event_bindings: {}
+      layout_properties: {grid_position: 'MTQOCK,HKWXQM IFLIOK,XCAIVB'}
+      name: enter_button
+      properties:
+        spacing:
+          margin: [0, null, 0, null]
+          padding: [0, 0, 0, 0]
+        text: Enter
+      type: Button
+    - layout_properties: {grid_position: 'MTQOCK,VRCTRC UKGRBY,PHZFHU'}
+      name: label_2
+      properties:
+        align: center
+        bold: true
+        spacing:
+          margin: [0, null, 0, 0]
+          padding: [0, null, 4, 0]
+        text: Input Unit
+      type: Label
+    - event_bindings: {}
+      layout_properties: {grid_position: 'MTQOCK,VRCTRC MRRKFO,CYGJDJ'}
+      name: conv_drop
+      properties:
+        align: full
+        foreground: '#FFFAFA'
+        items: [Hartree, eV, cm-1, kcal/mol, nm]
+        margin: [2, 14, 0, 11]
+      type: DropDown
+    - data_bindings: []
+      event_bindings: {}
+      layout_properties: {grid_position: 'MTQOCK,VRCTRC NBUFTP,KNBNFP'}
+      name: clear_button
+      properties:
+        background: ''
+        foreground: ''
+        spacing:
+          margin: [0, null, 0, null]
+          padding: [0, 0, 0, 0]
+        text: Clear
+      type: Button
+    layout_properties: {grid_position: 'BMUUKA,LQVOPV'}
+    name: column_panel_1
+    properties: {col_widths: '{"HKWXQM":25,"VRCTRC":19,"FQIVXS":20}', wrap_on: mobile}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC EEDDFG,YCDCLN'}
+      name: label_3
+      properties:
+        align: center
+        bold: true
+        spacing:
+          margin: [0, null, 0, null]
+          padding: [0, null, 4, 0]
+        text: Conversion
+      type: Label
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC EEDDFG,OARJRR'}
+      name: spacer_3
+      properties: {height: 9.600006103515625}
+      type: Spacer
+    - data_bindings: []
+      event_bindings: {}
+      layout_properties: {grid_position: 'VMQMIX,XQGYTC MJPSFX,QAROMO'}
+      name: display_0
+      properties:
+        enabled: false
+        font_size: null
+        foreground: '#FFFAFA'
+        margin: [0, 0, 4, 0]
+        role: outlined
+        text: ''
+        visible: true
+      type: TextBox
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC MJPSFX,AZVKXS'}
+      name: conv_label_0
+      properties:
+        bold: true
+        foreground: '#FFFAFA'
+        spacing:
+          margin: [11, null, 0, null]
+          padding: [0, 0, 0, 0]
+        text: ''
+      type: Label
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC PZHZJO,HMYRUN'}
+      name: display_1
+      properties:
+        enabled: false
+        font_size: null
+        foreground: '#FFFAFA'
+        margin: [0, null, 4, 0]
+        role: outlined
+      type: TextBox
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC PZHZJO,NZHUYY'}
+      name: conv_label_1
+      properties: {bold: true, foreground: '#FFFAFA', text: ''}
+      type: Label
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC ISKJQD,AIUYYS'}
+      name: display_2
+      properties:
+        enabled: false
+        foreground: '#FFFAFA'
+        margin: [0, null, 4, 0]
+        role: outlined
+      type: TextBox
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC ISKJQD,FJAVFS'}
+      name: conv_label_2
+      properties: {bold: true, foreground: '#FFFAFA', text: ''}
+      type: Label
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC MTGJJJ,ICMIEV'}
+      name: display_3
+      properties:
+        enabled: false
+        foreground: '#FFFAFA'
+        margin: [0, null, 4, 0]
+        role: outlined
+      type: TextBox
+    - layout_properties: {grid_position: 'VMQMIX,UBHDNV'}
+      name: spacer_1
+      properties: {height: 32}
+      type: Spacer
+    - layout_properties: {grid_position: 'VMQMIX,XQGYTC MTGJJJ,WOCUMN'}
+      name: conv_label_3
+      properties: {bold: true, foreground: '#FFFAFA', text: ''}
+      type: Label
+    layout_properties: {grid_position: 'BMUUKA,OZQGIB'}
+    name: column_panel_2
+    properties:
+      col_widths: '{"QAROMO":35,"HMYRUN":35,"AIUYYS":35,"ICMIEV":35,"XQGYTC":56,"UBHDNV":4}'
+      spacing:
+        padding: [null, null, null, 9]
+      wrap_on: never
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'PKGTJE,BXKZPI'}
+    name: spacer_4
+    properties: {height: 119.60000610351562}
+    type: Spacer
+  - layout_properties: {grid_position: 'JOGOCV,OIGNMR'}
+    name: image_1
+    properties: {height: 281.79998779296875, source: _/theme/image.png}
+    type: Image
+  - layout_properties: {grid_position: 'AXMLGZ,UWCPIQ'}
+    name: link_1
+    properties: {text: 'https://wild.life.nctu.edu.tw/class/common/energy-unit-conv-table.html'}
+    type: Link
+  data_bindings: []
+  layout_properties: {slot: default}
+  name: content_panel
+  properties:
+    col_spacing: none
+    col_widths: '{"LQVOPV":30,"OZQGIB":30}'
+    spacing:
+      margin: [null, 0, null, 0]
+      padding: [null, 0, null, 0]
+    wrap_on: mobile
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - data_bindings: []
+    event_bindings: {}
+    layout_properties: {grid_position: 'NXUEWS,XNTVKZ'}
+    name: link_2
+    properties: {align: center, icon: '', role: null, text: Energy Converter}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_3
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: rich_text_1
+  properties: {content: Wiseonics Energy  Emporium}
+  type: RichText
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
